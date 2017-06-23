@@ -35,7 +35,7 @@
   jQuery(document).ready(function($) {
  
         $('#myCarousel').carousel({
-                interval: 5000
+                interval: 0000
         });
  
         //Handles the carousel thumbnails
