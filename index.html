@@ -242,12 +242,12 @@
                  <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <a href="#!" title="Image Header" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="Why is this text not showing up!"> <img class="img-circle img-responsive" src="img/about/baby.jpg" alt=""> </a>
+                                <img class="img-circle img-responsive" src="img/about/baby.jpg" alt="">
                             </div>                        
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>1991</h4>
-                                    <h4 class="subheading">Back where it all <a href="#!" title="Image Header" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="<img class="img-circle img-responsive" src="img/about/baby.jpg" alt="">"> started </a></h4>
+                                    <h4 class="subheading">Back where it all <a href="#!" title="Image Header" data-toggle="popover" data-placement="right" data-trigger="focus" data-content=""> started </a></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">I was born and raised in Mobile, Alabama. It's located right on the Gulf of Mexico. Interesting facts: Mobile was originally a French colony and the first place Mardi Gras was practiced in the US.  </p>
@@ -384,6 +384,8 @@
     $(document).ready(function(){
         $('[data-toggle="popover"]').popover(); 
     });
+        var image = '<img src="images/image2.png"">';
+		$('#popover').popover({placement: 'right', content: image, html: true});
     </script>
 
     <!-- Clients Aside 
