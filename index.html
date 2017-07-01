@@ -23,6 +23,13 @@
 
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
+    
+    <!-- Enabling Popovers -->
+    <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover(); 
+    });
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -237,7 +244,7 @@
                  <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/baby.jpg" alt="">
+                                <a href="#" title="" data-toggle="popover" data-placement="right" data-trigger="focus" data-content="Content"><img class="img-circle img-responsive" src="img/about/baby.jpg" alt=""> </a>
                             </div>                        
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
